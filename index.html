@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS/Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="assets/favicon/favicon-64x64.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Pedro Ricciardi Portfolio Website</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="nav" class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="introWrap" id="home">
+      <div class="intro">
+        <h1 class="section__title section__title--intro">
+          <span>Hello, I'm</span><strong>Pedro Ricciardi</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Web Developer</p>
+        <img
+          src="assets/me/me.jpeg"
+          class="intro__img"
+          alt="a picture of Pedro Ricciardi"
+        />
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">About me</h2>
+
+      <p class="section__subtitle section__subtitle--about">
+        Web Developer based in Manchester-UK
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          As a tech and science enthusiast, I have always loved knowing how the
+          universe works and how I can help to improve people's lives. This
+          passion led me to choose a career as a science teacher (physics,
+          mathematics and robotics). After a few years of robotics teaching, I
+          realised that I had great potential to contribute to the tech
+          industry. Confident that the skills and expertise I developed add
+          quite well to the tech career, I decided to migrate to it.
+        </p>
+
+        <p>
+          I started my studies in front-end web development with the famous
+          triad: HTML, CSS and JavaScript. Nowadays, I am fully engaged in
+          React, keeping Next.js and Typescript on my radar.
+        </p>
+
+        <p>
+          Well, feel free to check out my portfolio. I'm still in the beginning,
+          but there's already a lot of affection and dedication involved. If you
+          liked what you saw, get in touch. I am always available to help, share
+          and learn.
+        </p>
+      </div>
+
+      <img
+        src="assets/me/me-park.jpeg"
+        class="about-me__img"
+        alt="a picture of Pedro Ricciardi"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of things that I've built so far
+      </p>
+
+      <div class="portfolio">
+      <!-- Image Carousel -->
+        <div class="portfolioItem">
+          <h2>Image Carousel</h2>
+          <div id="ic__buttonsWrap">
+            <button id="ic__previous" class="ic__button">Previous</button>
+            <button id="ic__next" class="ic__button">Next</button>
+          </div>
+          <img id="ic__showImage" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <a href="mailto:riccip@outlook.com" class="footer__link">
+        riccip@outlook.com
+      </a>
+      | <a href="tel:07598138882" class="footer__link">075 9813 8882</a>
+
+      <ul class="social-list">
+        <!-- LinkedIn -->
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/pedro-ricciardi/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+
+        <!-- GitHub -->
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/PERicci"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/cyfImageCarousel.js"></script>
+  </body>
+</html>
