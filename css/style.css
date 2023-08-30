@@ -102,7 +102,6 @@ h1 {
 h2,
 h3 {
   line-height: 1;
-  margin: 0;
 }
 
 h1 {
@@ -121,7 +120,7 @@ h3 {
 }
 
 .section__title {
-  margin-bottom: 0.25em;
+  margin: 0 0 0.25em;
 }
 
 .section__title--intro {
@@ -148,7 +147,8 @@ h3 {
 .section__subtitle--work {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
-  margin-bottom: 2.5em;
+  border-bottom: solid 1px var(--clr-light);
+  padding-bottom: 1rem;
 }
 
 /* header */
@@ -366,8 +366,13 @@ header {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3em;
+  gap: 1em;
   justify-content: center;
+}
+
+.portfolioItem {
+  border-bottom: solid 1px var(--clr-light);
+  padding-bottom: 2rem;
 }
 
 /* footer */
@@ -427,7 +432,6 @@ header {
   padding: 0.5em;
 }
 
-
 /* IMAGE CAROUSEL CSS */
 
 .ic__button {
@@ -445,5 +449,35 @@ header {
   margin: 1rem 0 1rem;
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0px 0px 5px #f0f0f0
+  box-shadow: 0px 0px 5px #f0f0f0;
+}
+
+/* STORY BOOK */
+
+#sb__title {
+  margin: 0 0 1rem;
+}
+
+.sb__blueDots {
+  text-decoration: underline dotted rgb(0, 238, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+.sb__yellowDots {
+  text-decoration: underline dotted yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sb__visible {
+  display: initial;
+  transition: all 0.2s;
+  margin: 0;
+}
+.sb__hidden {
+  display: none;
+  transition: all 0.2s;
+}
+
+#sb__restart {
+  margin-top: 1rem;
 }
