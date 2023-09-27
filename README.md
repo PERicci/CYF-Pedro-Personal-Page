@@ -4,7 +4,7 @@
 
 - :mortar_board: Licentiate degree in Physics
 '
-- :atom_symbol: Currently studying **React - The Complete Guide (incl Hooks, React Router, Redux) by Maximilian Schwarzmüller**
+- :atom_symbol: Currently studying in CYF - Web Development Course
 
 - :speech_balloon: Proficient in English, Spanish and Portuguese
 
